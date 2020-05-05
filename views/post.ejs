@@ -1,16 +1,16 @@
 <%-  include('partials/header') %>
 
-    <h1 style="text-align: center; font-size: 6rem;"><%=  shownPost.title %> </h1>
-    <p> <%=  shownPost.text %>  </p>
+    <h1 style="text-align: center; font-size: 6rem;"><%=  post.title %> </h1>
+    <p> <%=  post.text %>  </p>
 
     <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
 
     <form action="/edit" method="POST">
-        <button type="submit" class="btn btn-primary btn-lg" name="button" style="float: left;">Edit</button>
+        <button type="submit" value="<%=post._id%> " class="btn btn-primary btn-lg" name="editID" style="float: left;">Edit</button>
     </form>
 
     <form action="/delete" method="POST">
-        <button type="submit" class="btn btn-danger btn-lg" name="button" style="float: right;">Delete</button>
+        <button type="submit" class="btn btn-danger btn-lg" value="<%=post._id%>" name="deleteBTN" style="float: right;">Delete</button>
     </form>
 
 <%- include('partials/footer')  %> 
