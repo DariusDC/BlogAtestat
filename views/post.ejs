@@ -1,7 +1,9 @@
 <%-  include('partials/header') %>
 
-    <h1 style="text-align: center; font-size: 6rem;"><%=  post.title %> </h1>
-    <p> <%=  post.text %>  </p>
+    <h1 style="text-align: left; font-size: 3rem;"><%=  post.title %> </h1>
+    <div style="white-space: pre-wrap;">
+        <%= post.text %> 
+    </div>
 
     <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
 
